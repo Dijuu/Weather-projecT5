@@ -102,7 +102,7 @@ const WeeklyForecast = () => {
             {weeklyForecast.map((weather) => (
               <article
                 key={weather.day}
-                className={`rounded-2xl p-4 text-center shadow-md ${isDark ? 'bg-slate-800 text-white' : 'bg-white text-slate-800'}`}
+                className={`min-h-52 rounded-2xl p-4 text-center shadow-md ${isDark ? 'bg-slate-800 text-white' : 'bg-white text-slate-800'}`}
               >
                 <h3 className='text-lg font-semibold'>{weather.day}</h3>
                 <p className='my-4 text-4xl' role='img' aria-label={weather.condition}>{weather.icon}</p>

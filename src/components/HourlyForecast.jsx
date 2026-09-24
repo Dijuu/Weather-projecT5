@@ -132,7 +132,7 @@ const HourlyForecast = () => {
 
   return (
     <section className='px-3 py-15 sm:px-6 lg:px-10'>
-      <div className='mx-auto min-h-112 w-full max-w-7xl'>
+      <div className='mx-auto w-full max-w-7xl'>
         <div className='mb-5 flex items-center justify-between'>
           <div>
             <p className={`text-lg font-semibold uppercase tracking-wide ${isDark ? 'text-white' : 'text-cyan-700'}`}>Today</p>
@@ -147,7 +147,7 @@ const HourlyForecast = () => {
           {hourlyForecast.map((forecast) => (
             <article
               key={forecast.time}
-              className={`min-h-64 rounded-2xl border p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md ${isDark ? 'border-slate-700 bg-slate-800 text-white' : 'border-cyan-100 bg-white text-slate-800'}`}
+              className={`min-h-52 rounded-2xl border p-4 shadow-sm transition hover:-translate-y-1 hover:shadow-md ${isDark ? 'border-slate-700 bg-slate-800 text-white' : 'border-cyan-100 bg-white text-slate-800'}`}
             >
               <p className={`text-lg font-semibold ${isDark ? 'text-white' : 'text-slate-500'}`}>{forecast.time}</p>
               <div className='my-4 flex items-center justify-between'>

@@ -58,17 +58,17 @@ const Nav = () => {
   return (
   <div className={`relative min-h-20 ${isDark ? 'bg-cyan-900' : 'bg-slate-50'}`}>
   
-  <nav className="flex h-20 items-center justify-between px-4 py-2 bg-cyan-900 text-white">
+  <nav className="flex h-15 items-center justify-between px-4 py-2 bg-cyan-900 text-white">
         <Link to='/' className='flex items-center gap-2' onClick={closeMenu}>
           <img src={Sky} alt='Weather Dashboard logo' className='h-16 w-16 object-cover' />
           <h2 className='text-xl text-white font-bold sm:text-3xl'>Weather Dashboard</h2>
         </Link>
 
         <div className='hidden items-center text-white gap-6 md:flex'>
-          <Link className='group relative py-2 text-xl after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-amber-500 after:transition-transform after:duration-200 hover:after:scale-x-100' to='/'>Home</Link>
-          <a className='group relative py-2 text-xl after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-amber-500 after:transition-transform after:duration-200 hover:after:scale-x-100' href='#weather-insight' onClick={scrollToForecast}>Forecast</a>
-          <Link className='group relative py-2 text-xl after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-amber-500 after:transition-transform after:duration-200 hover:after:scale-x-100' to='/about'>About</Link>
-          <Link className='rounded-3xl bg-amber-500 px-5 py-2 text-xl font-semibold text-white hover:bg-amber-600' to='/login'>Login</Link>
+          <Link className='group relative py-2 text-sm after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-amber-500 after:transition-transform after:duration-200 hover:after:scale-x-100' to='/'>Home</Link>
+          <a className='group relative py-2 text-sm after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-amber-500 after:transition-transform after:duration-200 hover:after:scale-x-100' href='#weather-insight' onClick={scrollToForecast}>Forecast</a>
+          <Link className='group relative py-2 text-sm after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-amber-500 after:transition-transform after:duration-200 hover:after:scale-x-100' to='/about'>About</Link>
+          <Link className='rounded-3xl bg-amber-500 px-5 py-2 text-sm font-semibold text-white hover:bg-amber-600' to='/login'>Login</Link>
 
 
 
